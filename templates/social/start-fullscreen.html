@@ -1,0 +1,29 @@
+<!-- View header bar is hidden using attribute 'hide-nav-bar="true"' -->
+<ion-view title="Login-Fullscreen" hide-nav-bar="true">
+  <!-- Splash background - refer to .gem-splash_background in css/style.css to change image -->
+  <ion-content>
+    <div class="gem-form text-center">
+      <!-- Logo as you please -->
+      <div class="gem-splash-logo">
+        <h2 class="gem-black">GMYH</h2>
+        <h3 class="gem-black">Give me your hand</h3>
+      </div>
+      <!-- end Logo -->
+
+      <!-- buttons. .button-rounded can be added for more roundness -->
+      <a ui-sref="tutorial" class="button button-borderless button-rounded button-balanced">Ver Tutorial</a>
+      
+      <label class="item item-input">
+          <span class="input-label">Usuario</span>
+          <input type="text" ng-model="loginData.username" placeholder="Username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Senha</span>
+          <input type="password" ng-model="loginData.password" placeholder="Password">
+        </label>  
+      <a href="#/app/feed" target="_self" class="button button-block gem-success">Login</a>
+      <!-- end buttons -->
+    </div>    
+  </ion-content>
+</ion-view>
+
